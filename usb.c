@@ -69,7 +69,7 @@ void setupUSB (void) {
 #endif
     /* initialize the usb application */
 
-    wTransferSize=getFlashPageSize();
+    int wTransferSize=getFlashPageSize();
     u8_usbConfigDescriptorDFU[41]=(wTransferSize & 0x00FF);
     u8_usbConfigDescriptorDFU[42]=(wTransferSize & 0xFF00)>>8;
 
