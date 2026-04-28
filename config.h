@@ -159,7 +159,7 @@
     #define BUTTON_BANK GPIOB
     #define BUTTON_PIN 2
     #define BUTTON_PRESSED_STATE 1
-	
+
 #elif defined TARGET_WEACT_BPP
 
 
@@ -170,7 +170,14 @@
     #define BUTTON_BANK GPIOA
     #define BUTTON_PIN 0
     #define BUTTON_PRESSED_STATE 1
-	
+
+#elif defined TARGET_WEACT_BPP_NB
+// No Button version
+
+    #define LED_BANK            GPIOB
+    #define LED_PIN             2
+    #define LED_ON_STATE        1
+
 #elif defined TARGET_GENERIC_F103_PC13_FASTBOOT
 
 

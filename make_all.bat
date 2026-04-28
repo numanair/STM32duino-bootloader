@@ -26,3 +26,4 @@ make cc3d
 make generic-pc13-fastboot
 make smart-v2
 make weact-bpp
+make weact-bpp-nb
