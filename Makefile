@@ -464,7 +464,7 @@ copy_weact-bpp:
 	cp $(TARGET).bin bootloader_only_binaries/weact-bpp.bin
 	@echo
 
-build_weact-bpp-nb: TARGETFLAGS= -DTARGET_WEACT_BPP $(DEFINES)
+build_weact-bpp-nb: TARGETFLAGS= -DTARGET_WEACT_BPP_NB $(DEFINES)
 # Set the linker script
 build_weact-bpp-nb: LDFLAGS +=-T$(ST_LIB)/c_only_md_high_density.ld
 build_weact-bpp-nb: elf bin lss sym
