@@ -177,6 +177,7 @@
     #define LED_BANK            GPIOB
     #define LED_PIN             2
     #define LED_ON_STATE        1
+    #define BOOTLOADER_WAIT 10
 
 #elif defined TARGET_GENERIC_F103_PC13_FASTBOOT
 
@@ -429,9 +430,9 @@
     #error "No config for this target"
 #endif
 
-// Check if button pulldown should be enabled 
+// Check if button pulldown should be enabled
 // Default to True as this was the default prior to needing to disable it
-// in order to use the boot1 pin on the Blue Pill which has a very week pullup
+// in order to use the boot1 pin on the Blue Pill which has a very weak pullup
 #ifndef BUTTON_INPUT_MODE
 	#define BUTTON_INPUT_MODE 	CR_INPUT_PU_PD
 #endif
